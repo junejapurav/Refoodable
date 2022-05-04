@@ -1,0 +1,156 @@
+#About .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 2px black;
+}
+
+#About .heading span {
+    color: var(--red);
+}
+
+#About #floatingimg {
+    display: flex;
+    margin: 20px auto;
+}
+
+#About {
+    padding-top: 40px;
+}
+
+#About #motivate {
+    color: white;
+}
+
+#motivate {
+    display: block;
+    margin: 70px auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    height: auto;
+    background: url('./images/about\ bg.jpg') no-repeat center center/cover;
+    /* overflow: auto; */
+}
+
+#About #motivate #btn2 {
+    margin-top: 0px;
+}
+
+#About #motivate h1 {
+    font-size: 2rem;
+    padding: 25px;
+    font-family: var(--heading-font);
+    text-shadow: 6px 2px 2px black;
+}
+
+#About #motivate span {
+    color: var(--red);
+}
+
+#About #motivate p {
+    padding: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#About #motivate button {
+    background: var(--red);
+    color: white;
+    width: 185px;
+    height: 55px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: var(--heading-font);
+}
+
+/* Expert trainers */
+#profiles {
+    display: flex;
+}
+
+#trainers {
+    margin-top: 130px;
+}
+
+#trainers .box {
+    margin-top: 74px;
+    margin-bottom: 74px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+    padding: 25px;
+}
+
+#trainers .box1 {
+    margin-left: 73px;
+}
+
+#trainers .box2 {
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+#trainers .box3 {
+    margin-right: 73px;
+}
+
+#trainers .box .profile {
+    padding: 8px 50px;
+    font-size: 1.1rem;
+    color: var(--red);
+    font-family: var(--heading-font);
+}
+
+#trainers .box img {
+    margin-top: 20px;
+    padding: 10px 41px;
+    width: 76%;
+}
+
+#trainers .box .name {
+    margin-bottom: 7px;
+    padding: 0px 50px;
+    width: 65%;
+    font-family: var(--heading-font);
+}
+
+#trainers .box .about {
+    width: 69%;
+    padding-left: 50px;
+    font-family: var(--para-font);
+}
+
+#trainers ul {
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#trainers ul li {
+    list-style: none;
+}
+
+#trainers ul li a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: black;
+}
+
+#trainers ul li a:hover {
+    color: var(--red);
+}
+
+#map {
+    width: 100%;
+    height: 604px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+}
