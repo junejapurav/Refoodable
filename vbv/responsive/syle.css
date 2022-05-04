@@ -1,0 +1,19 @@
+#profiles {
+    flex-direction: column;
+}
+
+#trainers .box {
+    margin: 10% 20%;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+#navbarCollapse {
+    text-align: center;
+}
+
+#sign-in-btn {
+    margin: 0;
+}

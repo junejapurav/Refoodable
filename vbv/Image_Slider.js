@@ -13,4 +13,8 @@ show_slide = (i) => {
     images[index].style.display = "block";
 }
 
+// setInterval(() => {
+//     show_slide(index++);
+// }, 3000);
+
 window.addEventListener("onload", show_slide(index));
