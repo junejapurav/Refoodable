@@ -3,7 +3,9 @@
     padding: 0;
 }
 
+
 /* CSS Variables */
+
 :root {
     --red: #ed563b;
     --heading-font: 'Ubuntu', sans-serif;
@@ -76,6 +78,23 @@
     font-family: var(--heading-font);
 }
 
+.close {
+    border: 1px solid white;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10%;
+}
+
+.close span {
+    font-size: 30px;
+    color: gray;
+}
+
+.close span:hover {
+    color: black;
+}
+
 #exampleModalCenter {
     background: rgba(0, 0, 0, 0.75);
 }
@@ -87,71 +106,8 @@
 .modal-footer {
     justify-content: center;
     height: 50%;
+    padding: 6% 0;
 }
-
-/* .close {
-    
-align-items flex-start
-align-items flex-start
-appearance button
-appearance none
-background-color rgb(239, 239, 239)
-background-color rgba(0, 0, 0, 0)
-border-bottom-color rgb(118, 118, 118)
-border-bottom-color rgb(0, 0, 0);
-border-bottom-style none
-border-bottom-width 2px;
-border-bottom-width 0px;
-border-left-color rgb(0, 0, 0);
-border-left-style outset;
-border-left-style none;
-border-left-width 2px;
-border-left-width 0px;
-border-right-color rgb(118, 118, 118);
-border-right-color rgb(0, 0, 0);
-border-right-style outset;
-border-right-style none;
-border-right-width 2px;
-border-right-width 0px;
-border-top-color rgb(118, 118, 118);
-border-top-color rgb(0, 0, 0);
-border-top-left-radius 0px;
-border-top-left-radius 0px;
-border-top-right-radius 0px;
-border-top-right-radius 0px;
-border-top-style outset;
-border-top-style none;
-border-top-width 2px;
-border-top-width 0px;
-font-weight 700;
-height 28px;
-height 56px;
-letter-spacing normal;
-letter-spacing normal;
-line-height 24px;
-line-height 24px;
-margin-bottom 0px;
-margin-bottom -16px;
-margin-left 0px;
-margin-left 333.859px;
-margin-right 0px;
-margin-right -16px;
-margin-top 0px;
-margin-top -16px;
-opacity 0.5;
-overflow-x visible;
-overflow-y visible;
-padding-bottom 0px;
-padding-bottom 16px;
-padding-left 0px;
-padding-left 16px;
-padding-right 0px;
-padding-right 16px;
-padding-top 0px;
-padding-top 16px;
--webkit-box-direction normal;
-width 48.9688px;;
-} */
 
 #donate-food,
 #donate-money {
@@ -159,10 +115,14 @@ width 48.9688px;;
     font-family: var(--heading-font);
     width: 48%;
     height: 0%;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    padding: 2%;
+    border-radius: 20px;
 }
 
+
 /* Expert trainers */
+
 #profiles {
     display: flex;
     width: 100%;
