@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --red: #ed563b;
+    --heading-font: 'Ubuntu', sans-serif;
+    --para-font: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation Menu  */
+
+.container-fluid {
+    /* height: 10%; */
+    background-color: black;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 99999;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    padding-top: 1.5%;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 2px orangered;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.navbar-brand p {
+    color: white;
+    font-size: 1.65rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 76%;
+}
+
+.navbar-nav a {
+    padding-left: 80px;
+}
+
+
+#navbarCollapse a {
+    color: white;
+    padding: 0px 24px;
+    font-size: 1.1rem;
+}
+
+#navbarCollapse a:hover {
+    color: var(--red);
+}
+
+#red-logo {
+    color: var(--red);
+}
+
+#sign-in-btn {
+    background-color: var(--red);
+    color: white;
+    margin-left: 13%;
+    cursor: pointer;
+    padding: 0.5% 2%;
+    border-radius: 7px;
+    font-family: var(--heading-font);
+}
+
+#sign-in-btn:hover {
+    background-color: #e93d1f;
+    transform: scale(1.03);
+}
+
+/* Home section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#home .quotes1 {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+#home .quotes2 {
+    margin-top: 50px;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 6px 2px 2px black;
+    font-family: 'Merienda', cursive;
+}
+
+#home .quotes2 span {
+    color: var(--red);
+}
