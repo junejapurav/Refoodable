@@ -5,7 +5,8 @@ const ejs=require('ejs');
 var bodyParser=require('body-parser');
 
 let username='Sign In';
-let balance=0;
+let balance=977898;
+let array=[];
 
 app.set('view engine','ejs');
 app.use(bodyParser.json());
@@ -233,7 +234,12 @@ app.post('/payment', function(req,res){
         console.log("Record inserted Successfully");
         }    
     });
-    return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+    // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+    
+    res.render('resources.ejs',{
+        balance:balance,
+        array:array
+    })
 });
 
 
@@ -296,6 +302,9 @@ app.post('/byfood',(req,res)=>{
     var phone=req.body.phone;
     var daysold=req.body.daysold;
     var quantity=req.body.txt;
+    for(let i=0;i<quantity.length;i++){
+        array.push(quantity[i]);
+    }
   
     var data = {
         "food":food,
@@ -307,6 +316,8 @@ app.post('/byfood',(req,res)=>{
         "quantity":quantity
     }
 
+
+
     db.collection('DonatebyFood').insertOne(data,function(err, collection){
         if (err) throw err;
         else{
@@ -315,7 +326,12 @@ app.post('/byfood',(req,res)=>{
         console.log("Record inserted Successfully");
         }    
     });
-    return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+   
+    // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+      return res.render('resources.ejs',{
+          array:array,
+          balance:balance
+      })
 })
 
 
