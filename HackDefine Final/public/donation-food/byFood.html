@@ -44,9 +44,11 @@
         </nav>
         
         <div class="donation">
+            <form action="/byfood" method="post">
             <!-- <h2>DONATION BY FOOD</h2> -->
         <div class="buttons">
-            <button class="btns" id="cooked-btn">Cooked</button><button class="btns" id="raw-btn">Raw</button>
+            <button type="radio" name="food" class="btns" id="cooked-btn">Cooked</button>
+            <button type="radio" name="food class="btns" id="raw-btn">Raw</button>
         </div>
         <div id="details">
             <div class="donor-type">
@@ -58,27 +60,28 @@
             </div>
             
             <div class="form-group">
-                <input type="text" id="name" name="txtName" class="form" placeholder="Your Name *" value="" />
+                <input type="text" id="name" name="name" class="form" placeholder="Your Name *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="email" name="txtEmail" class="form" placeholder="Your Email *" value="" />
+                <input type="text" id="email" name="email" class="form" placeholder="Your Email *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="phone" name="txtPhone" class="form" placeholder="Your Phone Number *" value="" />
+                <input type="text" id="phone" name="phone" class="form" placeholder="Your Phone Number *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="days" name="txtdays" class="form" placeholder="How old is your food *" value="" />
+                <input type="text" id="days" name="daysold" class="form" placeholder="How old is your food *" value="" />
             </div>
 
             
             <div id="items">
 
             </div>
-            <button id="plus">+ Add Items</button>
+            <button type="button" id="plus">+ Add Items</button>
             
             <div class="form-group">
-                <button id="submit">Submit</button>
+                <button type="submit" submit">Submit</button>
             </div>
+        </form>
         </div>
         </div>
         
