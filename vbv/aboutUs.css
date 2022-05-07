@@ -14,7 +14,8 @@
 
 #About .heading,
 #contact-us .heading,
-#team .heading {
+#team .heading,
+#goals .heading {
     display: flex;
     justify-content: center;
     font-size: 2.3rem;
@@ -24,7 +25,8 @@
 }
 
 #About .heading span,
-#contact-us span {
+#contact-us span,
+#goals span {
     color: var(--red);
 }
 
@@ -209,8 +211,42 @@
     height: 100%;
 }
 
+#vision {
+    display: flex;
+}
+
+#goals {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.para {
+    list-style: none;
+}
+
+.para li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 25px;
+    margin-left: -1em;
+    margin-top: 10px;
+    content: "\00BB";
+}
+
+.para li {
+    padding-bottom: 10px;
+}
+
 .embed-responsive-item {
-    width: 30%;
+    width: 60%;
     height: 14rem;
     margin-bottom: 40px;
 }
@@ -219,4 +255,6 @@
     display: flex;
     justify-content: right;
     padding-right: 40px;
+    width: 60%;
+    align-items: center;
 }
