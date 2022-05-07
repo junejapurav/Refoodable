@@ -2,8 +2,8 @@
     flex-direction: column;
 }
 
-#trainers .box {
-    margin: 10% 20%;
+#team .box {
+    margin: 20% 20%;
 }
 
 .navbar-nav {
@@ -16,4 +16,9 @@
 
 #sign-in-btn {
     margin: 0;
+}
+
+#prev,
+#next{
+    height: 42.5rem;
 }
