@@ -157,9 +157,15 @@
 #team .box img {
     margin: 10% 10% 5% 10%;
     padding: 0% 10%;
+<<<<<<< HEAD
     width: 80%;
     height: 25%;
     border-radius: 50%;
+=======
+    width: 90%;
+    height: auto;
+    border-radius: 76%;
+>>>>>>> 56f29d7ab73aed6db710f342edf72226334cf7f5
 }
 
 #team .box .name {

@@ -1,8 +1,10 @@
-.image {
+.image,
+.image1 {
     display: none;
 }
 
-.image img {
+.image img,
+.image1 img {
     opacity: 95%;
     /* width: 1349px; */
     width: 100%;
@@ -11,7 +13,9 @@
 }
 
 #prev,
-#next {
+#next,
+#prev1,
+#next1 {
     position: absolute;
     height: 43.5rem;
     width: 4%;
@@ -26,16 +30,20 @@
     border-radius: 0 3px;
 }
 
-#prev {
+#prev,
+#prev1 {
     left: 0;
 }
 
-#next {
+#next,
+#next1 {
     right: 0;
 }
 
 #prev:hover,
-#next:hover {
+#next:hover,
+#prev1:hover,
+#next1:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -52,7 +60,6 @@
     from {
         opacity: 0.4;
     }
-
     to {
         opacity: 1;
     }
