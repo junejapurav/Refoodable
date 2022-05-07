@@ -12,7 +12,9 @@
     --para-font: 'Baloo Bhai 2', cursive;
 }
 
-#About .heading, #contact-us .heading, #team .heading {
+#About .heading,
+#contact-us .heading,
+#team .heading {
     display: flex;
     justify-content: center;
     font-size: 2.3rem;
@@ -21,11 +23,14 @@
     text-shadow: 2px 2px 2px black;
 }
 
-#About .heading span, #contact-us span{
+#About .heading span,
+#contact-us span {
     color: var(--red);
 }
 
-#About .floatingimg, #contact-us .floatingimg, #team .floatingimg{
+#About .floatingimg,
+#contact-us .floatingimg,
+#team .floatingimg {
     display: flex;
     margin: 20px auto;
 }
@@ -151,7 +156,7 @@
     margin: 5%;
     padding: 0% 10%;
     width: 90%;
-    height: 30%;
+    height: auto;
     border-radius: 76%;
 }
 
@@ -202,4 +207,16 @@
 #map iframe {
     width: 100%;
     height: 100%;
+}
+
+.embed-responsive-item {
+    width: 30%;
+    height: 14rem;
+    margin-bottom: 40px;
+}
+
+.embed-responsive {
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
 }
