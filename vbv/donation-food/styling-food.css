@@ -57,10 +57,11 @@ input:focus
     height: 5rem;
 }
 
-#col-md-6{
+#details{
     margin-top: 3rem;
-    margin-left: 25rem;
-    width: 50%;
+    margin-left: 27.5%;
+   max-width: 50%;
+    justify-content: center;
    
    
 }
