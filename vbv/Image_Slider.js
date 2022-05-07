@@ -1,4 +1,4 @@
-let index = 0, index1 = 0;
+let index = 0;
 
 show_slide = (i) => {
     index += i;
@@ -15,6 +15,6 @@ show_slide = (i) => {
 
 setInterval(() => {
     show_slide(index++);
-}, 3000);
+}, 4000);
 
 window.addEventListener("onload", show_slide(index));
