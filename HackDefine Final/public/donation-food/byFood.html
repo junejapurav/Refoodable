@@ -12,14 +12,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="../style.css">
 
-    <link rel="stylesheet" href="donation-food/styling-food.css">
+    <link rel="stylesheet" href="/donation-food/styling-food.css">
     <script src="/donation-food/byfood.js" type="module" defer></script>
 
 </head>
 <body>
-    
     <div class="main">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -33,7 +32,7 @@
     
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#home" class="nav-item nav-link">Home</a>
                         <a href="#About" class="nav-item nav-link">About Us</a>
                         <a href="#" class="nav-item nav-link">Blogs</a>
                         <a href="#" class="nav-item nav-link">Events</a>
@@ -49,27 +48,26 @@
         <div class="buttons">
             <button class="btns" id="cooked-btn">Cooked</button><button class="btns" id="raw-btn">Raw</button>
         </div>
-        <form action="/byfood" method="post">
-        <div id="col-md-6">
-            
+        <div id="details">
             <div class="donor-type">
+               
                 <input type="radio" id="Personal" name="donor" value="personal">
-                <label for="personal">Personal</label><br>
+                <label for="Personal">Personal</label>               
                 <input type="radio" id="organization" name="donor" value="organization">
-                <label for="organization">Organization</label><br>
+                <label for="organization">Organization</label>
             </div>
             
             <div class="form-group">
-                <input type="text" id="name" name="name" class="form" placeholder="Your Name *" value="" />
+                <input type="text" id="name" name="txtName" class="form" placeholder="Your Name *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="email" name="email" class="form" placeholder="Your Email *" value="" />
+                <input type="text" id="email" name="txtEmail" class="form" placeholder="Your Email *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="phone" name="phone" class="form" placeholder="Your Phone Number *" value="" />
+                <input type="text" id="phone" name="txtPhone" class="form" placeholder="Your Phone Number *" value="" />
             </div>
             <div class="form-group">
-                <input type="text" id="daysold" name="DonatebyFood" class="form" placeholder="How old is your food *" value="" />
+                <input type="text" id="days" name="txtdays" class="form" placeholder="How old is your food *" value="" />
             </div>
 
             
@@ -82,7 +80,6 @@
                 <button id="submit">Submit</button>
             </div>
         </div>
-    </form>
         </div>
         
         

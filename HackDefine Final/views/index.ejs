@@ -38,7 +38,9 @@
                     <a href="#" class="nav-item nav-link">Events</a>
                     <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <button id="sign-in-btn">Sign In</button>
+                <form action="/sign" method="get">
+                <button id="sign-in-btn"><%= username%></button>
+            </form>
             </div>
         </div>
     </nav>
@@ -90,11 +92,16 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-
+       
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" id="donate-food">Donate By Food</button>
-                            <button type="button" class="btn btn-primary" id="donate-money">Donate By Money</button>
+                            <form action="/byfood" method="get">
+                            <button type="submit" class="btn btn-secondary" id="donate-food">Donate By Food</button>
+                        </form>
+                             <form action="/donate" method="get">
+                            <button type="submit" class="btn btn-primary" id="donate-money">Donate By Money</button>
+                             </form>
                         </div>
+                    
 
                     </div>
 
@@ -333,23 +340,23 @@
             <div class="contact-image">
                 <img src="https://png.pngtree.com/png-vector/20200323/ourlarge/pngtree-burger-icon-with-black-background-png-image_2164201.jpg" alt="rocket_contact" class="shadow" />
             </div>
-            <form method="post">
+            <form  action="/Contact-Us" method="post">
                 <h3>Drop Us a Message</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" id="name" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="text" id="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Your Email *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="text" id="phone" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="txtMsg" id="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            <textarea name="message" id="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" id="submit" name="btnSubmit" class="btnContact" value="Send Message" />
