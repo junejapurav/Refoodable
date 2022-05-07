@@ -1,4 +1,4 @@
-let index = 0;
+let index = 0, index1 = 0;
 
 show_slide = (i) => {
     index += i;
