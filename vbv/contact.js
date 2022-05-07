@@ -7,7 +7,8 @@ var message = document.querySelector("#message").value
 document.querySelector("#submit").addEventListener('click',submit);
 
 
-function submit(){
+function submit(event){
+    event.preventDefault();
 
     var obj= {
         name: name,
