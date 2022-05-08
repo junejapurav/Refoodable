@@ -55,9 +55,23 @@
     margin: 0;
 }
 
+#quotes {
+    padding: 0% 18%;
+}
+
 #quotes .quotes2 {
-    font-size: 2rem;
-    text-shadow: 4px 1px 0px black;
+    font-size: 1rem;
+    text-shadow: 0.2px 0.5px 0.5px black;
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+#quotes .author {
+    font-size: 1rem;
+}
+
+#motivate {
+    margin: 35px auto;
 }
 
 #goals {

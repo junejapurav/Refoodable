@@ -63,6 +63,10 @@ html {
     padding-left: 80px;
 }
 
+.navbar-collapse {
+    /* margin-left: 6%; */
+    justify-content: center;
+}
 
 #navbarCollapse a {
     color: white;
@@ -79,7 +83,7 @@ html {
 }
 
 #login-form {
-    margin-left: 13%;
+    margin-left: 9%;
 }
 
 #sign-in-btn {
@@ -111,20 +115,21 @@ html {
     left: 0px;
 }
 
-#quotes .quotes1 {
+#quotes .author {
     color: white;
     font-size: 1.3rem;
     text-align: center;
-    font-family: 'Merienda', cursive;
-    text-shadow: 2px 2px 2px black;
+    color: var(--red);
+    font-family: cursive;
+    text-shadow: 1px 1px 1px black;
 }
 
 #quotes .quotes2 {
     margin-top: 50px;
-    color: white;
-    font-size: 4rem;
+    color: black;
+    font-size: 2rem;
     text-align: center;
-    text-shadow: 6px 2px 2px black;
+    text-shadow: 2px 1px 2px black;
     font-family: 'Merienda', cursive;
 }
 
