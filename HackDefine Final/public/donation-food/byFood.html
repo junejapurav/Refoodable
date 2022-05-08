@@ -47,8 +47,12 @@
             <form action="/byfood" method="post">
             <!-- <h2>DONATION BY FOOD</h2> -->
         <div class="buttons">
-            <button type="radio" name="food" class="btns" id="cooked-btn">Cooked</button>
-            <button type="radio" name="food class="btns" id="raw-btn">Raw</button>
+            <button type="button"  class="btns" id="cooked-btn">
+                <input style="display:none" type="radio" name="food"  value="Cooked">
+            <label for="Cooked">Cooked</label>
+            </button>
+            
+            <button type="button" name="food" class="btns" id="raw-btn">Raw</button>
         </div>
         <div id="details">
             <div class="donor-type">

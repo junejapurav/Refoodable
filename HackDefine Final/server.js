@@ -5,8 +5,8 @@ const ejs=require('ejs');
 var bodyParser=require('body-parser');
 
 let username='Sign In';
-let balance=977898;
-let array=[];
+let balance=500;
+let array=['rice',38,'wheat',30,'daal',60];
 
 app.set('view engine','ejs');
 app.use(bodyParser.json());
@@ -123,11 +123,36 @@ const DonatebyFoodSchema =mongoose.Schema({
         require:true
     }
 });
+
+const OrganisationDonateSchema =mongoose.Schema({
+     
+
+    
+    name:{
+        type:String,
+        require:true
+    },
+    email:{
+        type:String,
+        require:true
+    },
+    phone:{
+        type:String,
+        require:true
+    },
+    meals:{
+        type:String,
+        require:true
+    }
+});
+
+
 // Model
 const userModel=mongoose.model('signup',UserSchema);
 const paymentModel=mongoose.model('payment',PaymentSchema);
 const ContactModel=mongoose.model('Contact-Msg',ContactSchema);
 const  DonatebyFodModel=mongoose.model('Donated-Food',DonatebyFoodSchema);
+const OrganisationModel=mongoose.model('Organisation',OrganisationDonateSchema );
 // app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: true
@@ -173,6 +198,14 @@ app.get('/Contact-Us',(req,res)=>{
     res.sendFile(__dirname+'/public/Contact-Us/contact.html');
 });
 
+app.get('/organisation',(req,res)=>{
+    res.sendFile(__dirname+'/public/organisation/index.html');
+})
+
+app.get('/thank',(req,res)=>{
+    res.sendFile(__dirname+'/public/thankyou/index.html');
+})
+
 
 app.post('/sign', function(req,res){
     var name = req.body.name;
@@ -197,6 +230,7 @@ db.collection('details').insertOne(data,function(err, collection){
     // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
     
     username=req.body.name;
+    // username="abc";
     return res.render('index.ejs',{
         username:username
     })
@@ -212,7 +246,7 @@ app.post('/payment', function(req,res){
     var expireData=req.body.expireData;
     var zip=req.body.zip;
     var amount=req.body.amount;
-    balance+=parseInt(amount);
+    balance=parseInt(amount);
     console.log(balance);
   
     var data = {
@@ -226,7 +260,7 @@ app.post('/payment', function(req,res){
         "amount":amount
     }
 
-    db.collection('payments').insertOne(data,function(err, collection){
+    db.collection('/payments').insertOne(data,function(err, collection){
         if (err) throw err;
         else{
             userModel.create(data);
@@ -236,7 +270,7 @@ app.post('/payment', function(req,res){
     });
     // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
     
-    res.render('resources.ejs',{
+    res.render('resource.ejs',{
         balance:balance,
         array:array
     })
@@ -265,33 +299,42 @@ app.post('/contact-us',(req,res)=>{
         console.log("Record inserted Successfully");
         }    
     });
-    return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+    res.sendFile(__dirname+'/public/thankyou/index.html');
+    // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
 });
 
-// app.post('/contact-us',(req,res)=>{
-//     console.log(req.body);
-//     var name = req.body.name;
-//     var email =req.body.email;
-//     var phone=req.body.phone;
-//     var message=req.body.message;
+app.post('/organisation',(req,res)=>{
+    console.log(req.body);
+    var org=req.body.org;
+    var name = req.body.name;
+    var email =req.body.email;
+    var phone=req.body.phone;
+    var meals=req.body.demand;
   
-//     var data = {
-//         "name": name,
-//         "email":email,
-//         "phone":phone,
-//         "message":message
-//     }
+    var data = {
+        "organisation":org,
+        "name": name,
+        "email":email,
+        "phone":phone,
+        "message":meals
+    }
 
-//     db.collection('contact-Msg').insertOne(data,function(err, collection){
-//         if (err) throw err;
-//         else{
-//             userModel.create(data);
-//             console.log(data);
-//         console.log("Record inserted Successfully");
-//         }    
-//     });
-//     return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
-// })
+    db.collection('Organisation').insertOne(data,function(err, collection){
+        if (err) throw err;
+        else{
+            userModel.create(data);
+            console.log(data);
+        console.log("Record inserted Successfully");
+        }    
+    });
+    // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
+    //  return sendFile("__dirname+'/public/resources/resources.html'");
+    return res.render('resource.ejs',{
+        array:array,
+          balance:balance
+    });
+});
+
 
 app.post('/byfood',(req,res)=>{
     console.log(req.body);
@@ -328,7 +371,7 @@ app.post('/byfood',(req,res)=>{
     });
    
     // return res.redirect('https://www.youtube.com/watch?v=uPFsZLfJ6p0&list=PL-Jc9J83PIiEnK1q9tuVrrORqKBexcE_J&index=12&t=740s ');
-      return res.render('resources.ejs',{
+      return res.render('resource.ejs',{
           array:array,
           balance:balance
       })
