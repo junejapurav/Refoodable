@@ -15,7 +15,9 @@
 #About .heading,
 #contact-us .heading,
 #team .heading,
-#goals .heading {
+#goals .heading,
+#events .heading,
+#vision .heading {
     display: flex;
     justify-content: center;
     font-size: 2.3rem;
@@ -26,13 +28,17 @@
 
 #About .heading span,
 #contact-us span,
-#goals span {
+#goals span,
+#events span,
+#vision span {
     color: var(--red);
 }
 
 #About .floatingimg,
 #contact-us .floatingimg,
-#team .floatingimg {
+#team .floatingimg,
+#events .floatingimg,
+#vision .floatingimg {
     display: flex;
     margin: 20px auto;
 }
@@ -48,12 +54,16 @@
 #motivate {
     display: block;
     margin: 70px auto;
-    width: 100%;
+    width: auto;
     text-align: center;
     padding-top: 80px;
     height: auto;
     background: url('./images/about\ bg.jpg') no-repeat center center/cover;
     /* overflow: auto; */
+}
+
+.event-slider {
+    margin-top: 2.5%;
 }
 
 #About #motivate h1 {
@@ -166,6 +176,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5%;
     text-align: center;
     font-family: var(--heading-font);
     font-weight: 550;
@@ -212,7 +223,7 @@
 }
 
 #vision {
-    display: flex;
+    margin-top: 5%;
 }
 
 #goals {
@@ -258,3 +269,4 @@
     width: 60%;
     align-items: center;
 }
+

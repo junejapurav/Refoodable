@@ -2,12 +2,47 @@
     flex-direction: column;
 }
 
-#trainers .box {
-    margin: 10% 20%;
+#events .heading {
+    flex-direction: column;
+    align-items: center;
 }
 
+#team .box {
+    margin: 5% 15%;
+}
+
+#team .box img {
+    margin: 7% 0% 0% 19%;
+    width: 60%;
+}
+
+.image img {
+    height: 15rem;
+}
+
+#prev, #next {
+    height: 20rem;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
 .navbar-nav {
     margin: auto;
+}
+
+.navbar-brand p{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 4%;
 }
 
 #navbarCollapse {
@@ -16,4 +51,9 @@
 
 #sign-in-btn {
     margin: 0;
+}
+
+#home .quotes2 {
+    font-size: 2rem;
+    text-shadow: 4px 1px 0px black;
 }

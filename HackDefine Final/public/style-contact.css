@@ -10,9 +10,12 @@
     --para-font: 'Baloo Bhai 2', cursive;
 }
 
+#contact-us {
+    margin-top: 2%;
+}
+
 .contact-form {
     margin-top: 2%;
-    margin-bottom: 5%;
     width: 70%;
 }
 
