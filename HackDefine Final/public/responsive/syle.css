@@ -20,7 +20,8 @@
     height: 15rem;
 }
 
-#prev, #next {
+#prev,
+#next {
     height: 20rem;
 }
 
@@ -28,11 +29,12 @@
     display: flex;
     justify-content: center;
 }
+
 .navbar-nav {
     margin: auto;
 }
 
-.navbar-brand p{
+.navbar-brand p {
     display: flex;
     flex-direction: column;
     line-height: 1.8rem;
@@ -53,7 +55,19 @@
     margin: 0;
 }
 
-#home .quotes2 {
+#quotes .quotes2 {
     font-size: 2rem;
     text-shadow: 4px 1px 0px black;
+}
+
+#goals {
+    flex-direction: column;
+}
+
+.embed-responsive {
+    justify-content: center;
+}
+
+.embed-responsive-item {
+    height: 10rem;
 }

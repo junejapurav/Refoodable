@@ -95,6 +95,12 @@
     font-family: var(--heading-font);
 }
 
+.donate-form{
+    display: flex;
+    width: 83%; 
+    justify-content: center;
+}
+
 .close {
     border: 1px solid white;
     background-color: white;
@@ -130,10 +136,10 @@
 #donate-money {
     background: var(--red);
     font-family: var(--heading-font);
-    width: 48%;
-    height: 0%;
-    font-size: 1.4rem;
-    padding: 2%;
+    width: 93%;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-bottom: 0.6rem;
     border-radius: 20px;
 }
 
@@ -212,23 +218,14 @@
     color: var(--red);
 }
 
-#map {
-    width: 100%;
-    height: 604px;
-}
-
-#map iframe {
-    width: 100%;
-    height: 100%;
-}
-
 #vision {
     margin-top: 5%;
 }
 
 #goals {
-    width: 60%;
+    width: 94%;
     padding-left: 20px;
+    display: flex;
 }
 
 .para {
@@ -257,16 +254,15 @@
 }
 
 .embed-responsive-item {
-    width: 60%;
-    height: 14rem;
+    width: 85%;
+    height: 16rem;
     margin-bottom: 40px;
 }
 
 .embed-responsive {
     display: flex;
     justify-content: right;
-    padding-right: 40px;
-    width: 60%;
+    width: 100%;
     align-items: center;
 }
 

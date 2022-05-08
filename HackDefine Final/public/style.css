@@ -78,12 +78,17 @@ html {
     color: var(--red);
 }
 
+#login-form {
+    margin-left: 13%;
+}
+
 #sign-in-btn {
     background-color: var(--red);
     color: white;
-    margin-left: 13%;
     cursor: pointer;
-    padding: 0.5% 2%;
+    width: 7rem;
+    font-size: 1.1rem;
+    padding: 5.5% 0%;
     border-radius: 7px;
     font-family: var(--heading-font);
 }
@@ -93,9 +98,9 @@ html {
     transform: scale(1.03);
 }
 
-/* Home section  */
+/* quotes section  */
 
-#home {
+#quotes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,7 +111,7 @@ html {
     left: 0px;
 }
 
-#home .quotes1 {
+#quotes .quotes1 {
     color: white;
     font-size: 1.3rem;
     text-align: center;
@@ -114,7 +119,7 @@ html {
     text-shadow: 2px 2px 2px black;
 }
 
-#home .quotes2 {
+#quotes .quotes2 {
     margin-top: 50px;
     color: white;
     font-size: 4rem;
@@ -123,6 +128,6 @@ html {
     font-family: 'Merienda', cursive;
 }
 
-#home .quotes2 span {
+#quotes .quotes2 span {
     color: var(--red);
 }
