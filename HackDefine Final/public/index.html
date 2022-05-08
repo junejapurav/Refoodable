@@ -85,26 +85,24 @@
         <div id="motivate">
             <h1 id="quote">DON’T <span class="red-span">THINK</span>, BEGIN <span class="red-span">TODAY</span>!</h1>
             <p>We are solving food waste & hunger across 15+ cities in India!</p>
-            <button id="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Donate</button>
-           
-            <form action="/organisation" method="get">
-            <button id="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Apply now</button>
-           </form>
-          
-           <!-- Modal -->
+            <div id="button-container">
+                <button class="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Donate</button>
+
+                <form action="/organisation" method="get">
+                    <button class="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Apply now</button>
+                </form>
+            </div>
+
+            <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
 
                     <div class="modal-content">
-
-                        <div class="modal-header">
+                        <div class="modal-footer">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
-
-                        <div class="modal-footer">
                             <form action="/byfood" method="get" class="donate-form">
                                 <button type="submit" class="btn btn-secondary" id="donate-food">Donate By Food</button>
                             </form>

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 /* CSS Variables */
 
@@ -82,7 +86,7 @@
     font-family: 'Baloo Bhai 2', cursive;
 }
 
-#donate-btn {
+.donate-btn {
     background: var(--red);
     color: white;
     width: 185px;
@@ -93,11 +97,12 @@
     padding: 10px 20px;
     cursor: pointer;
     font-family: var(--heading-font);
+    margin-right: 3%;
 }
 
-.donate-form{
+.donate-form {
     display: flex;
-    width: 83%; 
+    width: 83%;
     justify-content: center;
 }
 
@@ -106,7 +111,8 @@
     background-color: white;
     width: 40px;
     height: 40px;
-    margin-bottom: 10%;
+    margin: 0;
+    margin-left: 27rem;
 }
 
 .close span {
@@ -124,12 +130,14 @@
 
 .modal-header {
     justify-content: flex-end;
+    border-bottom: 0;
+    padding: 0 1rem;
 }
 
 .modal-footer {
-    justify-content: center;
-    height: 50%;
-    padding: 6% 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #donate-food,
@@ -264,4 +272,9 @@
     justify-content: right;
     width: 100%;
     align-items: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
 }

@@ -18,8 +18,6 @@ $(document).ready(function(){
       if ( !input ) {
         dollar = $('.active').data('dollars');
        } else if ( $.trim(input) === '' || isNaN(input)) {
-        // empty space leaves value = 'undefined'. 
-        // Have to fix $.trim(input) == '' above so that it works.
         console.log('Yes');
         dollar = "Please enter a number."; 
       } else {
@@ -39,7 +37,7 @@ $(document).ready(function(){
       pText.text("Thank you!");
       var oValue = other.find('input');
       oValue.keyup(function() {
-        if ( oValue.val() > 50 ) {
+        if ( oValue.val() > 0 ) {
           pText.text("Thank you!" + " You\'re donation covers housing and counseling services for " + oValue.val()/25 + " people.");
         } else {
           pText.text("Thank you!");
