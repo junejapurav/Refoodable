@@ -52,3 +52,15 @@ body {
 .text2 {
     color: #a5aec0
 }
+button{
+    width: 200px;
+    height: 50px;
+    background-color: #ed563b;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px #a5aec0;
+    -webkit-appearance: inherit;
+}
